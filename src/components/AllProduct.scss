@@ -1,0 +1,14 @@
+.all-product-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+
+    .all-product-title {
+        padding: 16px;
+    }
+
+    .all-product-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
