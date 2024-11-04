@@ -34,8 +34,8 @@ const ProductCategories = () => {
       <h4 className="category-title">Chọn tranh theo loại</h4>
       <div className="category-container">
         {categories.map((category, index) => (
-          <Link to={category.link}>
-            <div key={index} className="category-item">
+          <Link key={index} to={category.link}>
+            <div className="category-item">
               <img
                 src={category.img}
                 alt={category.title}

@@ -1,9 +1,12 @@
 import React from "react";
 import "./Favourite.scss";
+import AllProducts from "../../components/AllProduct";
 const Favourite = () => {
   return (
     <>
-      <h1>Yêu thích</h1>
+      <div className="favourite-page">
+        <AllProducts />
+      </div>
     </>
   );
 };

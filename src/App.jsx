@@ -12,7 +12,8 @@ import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/account/Cart";
-import Orders from "./pages/account/Orders";
+import Orders from "./pages/account/orders/Orders";
+import OrderDetail from "./pages/account/orders/OrderDetail";
 import Favourite from "./pages/account/Favourite";
 import Account from "./pages/account/Account";
 function App() {
@@ -34,7 +35,9 @@ function App() {
           <Route path="/account" element={<Account />}>
             <Route path="/account/profile" element={<AccountDetail />} />
             <Route path="/account/cart" element={<Cart />} />
-            <Route path="/account/order" element={<Orders />} />
+            <Route path="/account/order" element={<Orders />}>
+              <Route path=":status" element={<OrderDetail />} />
+            </Route>
             <Route path="/account/favourite" element={<Favourite />} />
           </Route>
         </Route>

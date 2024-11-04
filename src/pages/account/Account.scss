@@ -8,9 +8,19 @@
     .account-navbar {
         width: 15%;
         list-style: none;
+        font-size: 18px;
+        font-weight: bold;
+
+        li {
+            padding-bottom: 10px;
+        }
+
+        .active {
+            color: #152347;
+        }
 
         a {
-            color: black;
+            color: rgb(177, 173, 173);
         }
     }
 

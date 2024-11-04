@@ -1,0 +1,33 @@
+.order-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+    &__image {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 15px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    &__option {
+        font-size: 14px;
+        color: #666;
+        margin: 2px 0;
+    }
+}
