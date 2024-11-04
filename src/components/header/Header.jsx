@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import logo from "../assets/Logo_HAU.png";
+import logo from "../../assets/Logo_HAU.png";
 
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from "@mui/icons-material/Search";
 
-import Navbar from "./Navbar";
+import Navbar from "../navbar/Navbar";
 import { Badge } from "@mui/material";
 const Header = () => {
   return (

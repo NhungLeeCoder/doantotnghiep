@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ProductCard.scss";
-import bedroomImg from "../assets/product-category-img/tranh-phong-ngu.jpeg";
+import bedroomImg from "../../assets/product-category-img/tranh-phong-ngu.jpeg";
 const ProductCard = () => {
   return (
     <div className="product-card">

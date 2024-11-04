@@ -11,11 +11,15 @@ import glassImg from "../assets/product-category-img/tranh-kinh.jpg";
 import tableImg from "../assets/product-category-img/tranh-de-ban.jpg";
 const ProductCategories = () => {
   const categories = [
-    { title: "Tranh phòng ngủ", img: bedroomImg, link: "tranh-phong-ngu" },
+    {
+      title: "Tranh phòng ngủ",
+      img: bedroomImg,
+      link: "/categories/tranh-phong-ngu",
+    },
     {
       title: "Tranh phòng khách",
       img: livingroomImg,
-      link: "tranh-phong-khach",
+      link: "/categories/tranh-phong-khach",
     },
     { title: "Tranh gỗ", img: woodenImg, link: "/categories/tranh-go" },
     { title: "Sơn dầu", img: sonDauImg, link: "/categories/son-dau" },

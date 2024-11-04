@@ -3,19 +3,18 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
 import Layout from "./pages/Layout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
-import AccountDetail from "./pages/AccountDetail";
+import AccountDetail from "./pages/account/AccountDetail";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import NotFound from "./pages/NotFound";
-import Cart from "./pages/Cart";
-import Orders from "./pages/Orders";
-import Favourite from "./pages/Favourite";
-import Account from "./pages/Account";
+import Cart from "./pages/account/Cart";
+import Orders from "./pages/account/Orders";
+import Favourite from "./pages/account/Favourite";
+import Account from "./pages/account/Account";
 function App() {
   const { pathname } = useLocation();
 

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Về chúng tôi</h3>
           <p>
-            Cửa Hàng HAU là không gian đặc biệt, nơi các sản phẩm thủ công, sáng
+            Art house là không gian đặc biệt, nơi các sản phẩm thủ công, sáng
             tạo và đầy tâm huyết được tạo ra bởi chính tay các sinh viên. Mua
             sắm tại đây không chỉ giúp bạn sở hữu những món đồ độc đáo mà còn
             ủng hộ đam mê và ước mơ của thế hệ trẻ.
