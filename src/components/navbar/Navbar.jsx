@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import "./Navbar.scss";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className="navbar">
-      <ul className="nav-list">
+      <div className="hamburger" onClick={toggleMenu}>
+        {menuOpen ? <CloseIcon /> : <MenuIcon />}
+      </div>
+
+      <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
         <li className="nav-list--item">
-          <Link>
+          <Link to="/">
             Tất cả tranh <KeyboardArrowDownIcon />
           </Link>
           <ul className="nav-list--item__dropdown">

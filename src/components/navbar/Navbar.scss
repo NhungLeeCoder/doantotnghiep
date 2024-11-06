@@ -44,7 +44,6 @@
                 display: none;
                 list-style: none;
                 background-color: base.$default-black;
-                color: base.$default-black;
                 color: white;
                 transition: 0.5s;
                 position: absolute;
@@ -75,8 +74,105 @@
                         }
                     }
                 }
-
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav-list {
+            flex-direction: column;
+            padding: 0;
+
+            &--item {
+                width: 100%;
+                text-align: left;
+                margin: 0;
+                padding: 12px 20px;
+
+                &:hover {
+                    .nav-list--item__dropdown {
+                        display: none;
+                    }
+                }
+
+                a {
+                    display: block;
+                    width: 100%;
+                }
+
+                .nav-list--item__dropdown {
+                    position: relative;
+                    top: 0;
+                    background-color: base.$default-black;
+                    text-align: left;
+                    display: none;
+                    width: 100%;
+                }
+
+                &:hover .nav-list--item__dropdown {
+                    display: block;
+                }
+
+                li {
+                    border-bottom: 1px solid #e8e8e8;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .navbar {
+            .nav-list {
+                padding-top: 10px;
+            }
+
+            .nav-list--item {
+                padding: 10px;
+                text-align: center;
+
+                &:hover {
+                    .nav-list--item__dropdown {
+                        display: block;
+                    }
+                }
+            }
+
+            .nav-list--item__dropdown {
+                position: static;
+                text-align: center;
+            }
+        }
+    }
+
+    // Hamburger menu
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .hamburger {
+            display: block;
+            font-size: 30px;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .nav-list {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            background-color: base.$default-black;
+        }
+
+        .nav-list.open {
+            display: block;
+        }
+
+        .nav-list--item {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
         }
     }
 }
