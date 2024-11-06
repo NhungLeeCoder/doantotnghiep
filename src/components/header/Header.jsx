@@ -8,8 +8,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from "@mui/icons-material/Search";
-
-import Navbar from "../navbar/Navbar";
 import { Badge } from "@mui/material";
 const Header = () => {
   return (
@@ -52,18 +50,18 @@ const Header = () => {
             <li className="header-navigate--user">
               <AccountCircleIcon />
               <ul className="header-navigate--dropbox">
-                <li>
-                  <Link to="/account/profile">Thông tin</Link>
-                </li>
+                <Link to="/account/profile">
+                  <li>Thông tin</li>
+                </Link>
+                <Link to="/seller">
+                  <li>Trung tâm người bán</li>
+                </Link>
                 <li>Đăng xuất</li>
               </ul>
             </li>
           </ul>
         </div>
       </header>
-      <div className="black-line">
-        <Navbar />
-      </div>
     </div>
   );
 };

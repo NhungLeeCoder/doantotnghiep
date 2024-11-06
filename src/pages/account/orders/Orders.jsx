@@ -7,12 +7,10 @@ const Orders = () => {
   const navigate = useNavigate();
   useEffect(() => {
     console.log(status);
-  }, [status]);
-  useEffect(() => {
     if (!status) {
       navigate("pending");
     }
-  }, []);
+  }, [status]);
   return (
     <>
       <div className="orders">

@@ -1,0 +1,94 @@
+.seller-wrapper {
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seller {
+
+    h1 {
+        text-align: center;
+        color: #152347;
+    }
+
+    &-dashboard {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-upload {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        button {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 50%;
+            color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 13px;
+
+            &:hover {
+                background-color: #1e2a4d;
+                color: white
+            }
+        }
+    }
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+
+    .image-preview {
+        width: 100px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    }
+
+    .submit-button {
+        background-color: #152347;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background-color: #1e2a4d;
+        }
+    }
+}

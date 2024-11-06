@@ -13,6 +13,7 @@ import ProductDetails from "./pages/ProductDetails";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/account/Cart";
 import Orders from "./pages/account/orders/Orders";
+import Seller from "./pages/account/seller/Seller";
 import OrderDetail from "./pages/account/orders/OrderDetail";
 import Favourite from "./pages/account/Favourite";
 import Account from "./pages/account/Account";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/products" element={<Home />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/categories/:category" element={<Products />} />
+          <Route path="/seller" element={<Seller />} />
           <Route path="/account" element={<Account />}>
             <Route path="/account/profile" element={<AccountDetail />} />
             <Route path="/account/cart" element={<Cart />} />
