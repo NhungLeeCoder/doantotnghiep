@@ -40,6 +40,10 @@
         border-radius: 5px;
         overflow: hidden;
 
+        .table-header-tool {
+            width: 1%;
+        }
+
         th,
         td {
             border: 1px solid #ddd;

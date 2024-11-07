@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import "./ProductTableList.scss";
 
 const ProductTableList = ({ products }) => {
@@ -25,6 +27,7 @@ const ProductTableList = ({ products }) => {
             <th>Giá bán (vnđ)</th>
             <th>Ngày đăng</th>
             <th>Tình trạng</th>
+            <th className="table-header-tool">Tool</th>
           </tr>
         </thead>
         <tbody>
@@ -37,6 +40,11 @@ const ProductTableList = ({ products }) => {
               <td>{product.price}</td>
               <td>{product.dateAdded}</td>
               <td>{product.status}</td>
+              <td>
+                <Link target={"_blank"} to={`/products/${index}`}>
+                  <OpenInNewIcon />
+                </Link>
+              </td>
             </tr>
           ))}
         </tbody>
