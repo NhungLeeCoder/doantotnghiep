@@ -21,6 +21,7 @@ const ProductTableList = ({ products }) => {
             <th>Số thứ tự</th>
             <th>Tên sản phẩm</th>
             <th>Số lượng</th>
+            <th>Đã bán</th>
             <th>Giá bán (vnđ)</th>
             <th>Ngày đăng</th>
             <th>Tình trạng</th>
@@ -31,6 +32,7 @@ const ProductTableList = ({ products }) => {
             <tr key={product.id}>
               <td>{offset + index + 1}</td>
               <td>{product.name}</td>
+              <td>{product.quantity}</td>
               <td>{product.quantity}</td>
               <td>{product.price}</td>
               <td>{product.dateAdded}</td>
